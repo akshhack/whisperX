@@ -413,7 +413,7 @@ def transcribe_with_vad(
         result = transcribe(model, audio, mel=local_mel, verbose=verbose, **kwargs)
         seg_t["text"] = result["text"]
         print(f"<<<<<<THIS IS THE RESULT>>>>>>>> {result}")
-	output["segments"].append(
+        output["segments"].append(
             {
                 "start": seg_t["start"],
                 "end": seg_t["end"],
